@@ -5,7 +5,7 @@ export const useProductStore = create((set) => ({
     setProducts: (products) => set({products}),
     createProduct: async (newProduct) => {
         if (!newProduct.name || !newProduct.price || !newProduct.image) {
-            return ({success:false,message:"Please fill in all the details! :)"})
+            return {success:false, message: "Please fill in all the details! :)"};
         }
         const res = await fetch("/api/products", {
             method:"POST",
@@ -15,7 +15,8 @@ export const useProductStore = create((set) => ({
             body:JSON.stringify(newProduct)
         });
         const data = await res.json();
-        set((state) => ({products:[...state.products,data]}));
-        
+        set((state) => ({products:[...state.products,data.data]}));
+        return {success:true,message:"Product Created Successfully :)"};
+
     } 
 }));
