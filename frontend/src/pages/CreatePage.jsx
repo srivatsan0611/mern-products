@@ -28,6 +28,12 @@ const CreatePage = () => {
 				status: "success",
 				isClosable: true,
 			});
+
+      setNewProduct({
+        name:"",
+        price: "",
+        image:""
+      });
 		}
   }
  
