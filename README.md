@@ -1,9 +1,12 @@
 # Product Listing Application
-Built using the MERN Stack (MongoDB, ExpressJS, ReactJS and NodeJS) 
+Built using the MERN Stack (MongoDB, ExpressJS, ReactJS and NodeJS) + Chakra UI (For some React Abstraction)
 
 ## Overview
 
-The MERN Products Application is a full-stack web app that makes it easy to manage a product inventory with simple CRUD (Create, Read, Update, Delete) operations. Built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and deployed on Render, it’s designed to be both functional and user-friendly.
+The MERN Products Application is a full-stack web app that makes it easy to manage a product inventory with simple CRUD (Create, Read, Update, Delete) operations. Built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and deployed on Render, it’s designed to be both functional and user-friendly. It also implements Chakra UI on React to make components easier to import and design, basically leveraging React's component based arch.
+
+![image](https://github.com/user-attachments/assets/dd59fbd6-281d-4545-bec2-19b3cde472ed)
+
 
 This project is an attempt of mine to dive into the essentials of full-stack development.
 
