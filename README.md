@@ -28,7 +28,53 @@ Before you begin, ensure you have the following installed:
 #### Installation
 
 1. Clone the repo
-   '''
+   ```
    git clone https://github.com/srivatsan0611/mern-products.git
    cd mern-products
-   ''' 
+   ```
+2. Install the dependencies
+   ```
+   npm run build
+   ```
+   The package-json already has the commands to build the dependencies listed under the "build" script so yeah.
+3. Create a .env
+   ```
+   MONGO_URI=your_mongo_database_uri
+   PORT=5000
+   ```
+
+#### Usage
+You will end up having to run the front-end and the back-end separately in the deployment mode. So I suggest opening two concurrent terminals. 
+
+1. Backend
+   ```
+   cd backend
+   npm run dev
+   ```
+2. Frontend
+   ```
+   cd frontend
+   npm run dev
+   ```
+
+And all you need to do is open up the front-end local host that's mentioned in the terminal and you'll be able to use it.
+
+## Deployment
+
+This app was deployed on Render (Really easily). So in case you don't want to go through all that work just to simply test it out, you can always head to:
+https://mern-products-srivatsan.onrender.com/
+
+In case the time at which you click this, it isn't up and running, please do contact me :)
+
+## Contributing
+
+I mean, I know this is probably the most basic MERN Application and that it's intended for me to learn it's fundamentals and not deploy it full fledged, Contributions are more than welcome tbh.
+Please fork this repository and submit a pull request with your proposed changes.
+
+### Future Work
+So I'm putting this up under contributions because this could be an idea
+
+- Implement Authentication mechanisms using OAuth / JWT.
+- Create different personal displays for these Authorized Individuals.
+
+Thanks for reading!
