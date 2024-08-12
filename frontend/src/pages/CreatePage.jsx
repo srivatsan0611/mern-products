@@ -41,11 +41,11 @@ const CreatePage = () => {
     <Container maxW={"container.sm"}>
       <VStack 
       spacing={8}>
-        <Heading as={"h1"} size={"2x1"} textAlign={"center"} mb={8}>
+        <Heading as={"h1"} size={"3x1"} textAlign={"center"} mb={8} fontStyle={'italic'}>
           Create New Product
         </Heading>
 
-        <Box w={"full"} bg={useColorModeValue("white","darkgray")}
+        <Box w={"full"} bg={useColorModeValue("white.700","gray.650")}
         p={6}
         rounded={"lg"}
         shadow={"md"} >
