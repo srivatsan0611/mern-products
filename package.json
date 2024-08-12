@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/index.js"
-  },
+		"dev": "NODE_ENV=development nodemon backend/main.js",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+		"start": "NODE_ENV=production node backend/main.js"
+	},
   "type": "module",
   "author": "",
   "license": "ISC",
